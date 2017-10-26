@@ -1,6 +1,5 @@
 # NSTextField validation
 
-https://github.com/genedelisa/TextFieldValidation.git
 
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://en.wikipedia.org/wiki/MIT_License)
 [![GitHub version](https://badge.fury.io/gh/genedelisa%2Fnstextfield-validation.svg)](http://badge.fury.io/gh/genedelisa%2Fnstextfield-validation)
