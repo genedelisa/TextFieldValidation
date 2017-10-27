@@ -722,8 +722,9 @@
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                         <connections>
-                                            <binding destination="XfG-lQ-9wD" name="value" keyPath="self.givenName" id="Wt2-1g-xND">
+                                            <binding destination="XfG-lQ-9wD" name="value" keyPath="self.person.givenName" id="IdO-Nd-Uuc">
                                                 <dictionary key="options">
+                                                    <bool key="NSAlwaysPresentsApplicationModalAlerts" value="YES"/>
                                                     <bool key="NSValidatesImmediately" value="YES"/>
                                                 </dictionary>
                                             </binding>
@@ -737,8 +738,9 @@
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                         <connections>
-                                            <binding destination="XfG-lQ-9wD" name="value" keyPath="self.familyName" id="sqJ-hZ-Esd">
+                                            <binding destination="XfG-lQ-9wD" name="value" keyPath="self.person.familyName" id="kxD-2T-aBJ">
                                                 <dictionary key="options">
+                                                    <bool key="NSAlwaysPresentsApplicationModalAlerts" value="YES"/>
                                                     <bool key="NSValidatesImmediately" value="YES"/>
                                                 </dictionary>
                                             </binding>
@@ -752,8 +754,9 @@
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                         <connections>
-                                            <binding destination="XfG-lQ-9wD" name="value" keyPath="self.age" id="WNd-A9-acR">
+                                            <binding destination="XfG-lQ-9wD" name="value" keyPath="self.person.age" id="Rm1-it-s6h">
                                                 <dictionary key="options">
+                                                    <bool key="NSAlwaysPresentsApplicationModalAlerts" value="YES"/>
                                                     <bool key="NSValidatesImmediately" value="YES"/>
                                                 </dictionary>
                                             </binding>

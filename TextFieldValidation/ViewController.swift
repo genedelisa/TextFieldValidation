@@ -27,8 +27,13 @@ class ViewController: NSViewController {
     @objc dynamic var familyName:String?
     @objc dynamic var age:Int = 0
     
+    var person:Person!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        // probably injected
+        self.person = Person()
     }
 
     override var representedObject: Any? {
@@ -51,6 +56,7 @@ class ViewController: NSViewController {
             family: \(self.familyName ?? "No family")
             age: \(self.age)
             """)
+        Swift.print("\(person!)")
     }
     
     func displayAlert(messageText: String, informativeText: String) {
@@ -91,6 +97,8 @@ class ViewController: NSViewController {
 //                    throw DBError.textFieldValidation("Oh bloody hell!\nA family name must be at least three characters long")
                     let error = DBError.textFieldValidation("Oh bloody hell!\nA family name must be at least three characters long")
                     displayAlert(error: error)
+                    // without throwing the error, the model gets set to bad data
+                    //throw error
                 }
             }
         case "age" :
